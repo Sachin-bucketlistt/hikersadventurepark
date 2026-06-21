@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Activities.css';
 import { ACTIVITIES, CATEGORIES } from './activitiesData.jsx';
 
-export default function Activities() {
+export default function Activities({ onBook }) {
   const [active, setActive] = useState('All');
 
   const filtered = active === 'All'
@@ -55,6 +55,7 @@ export default function Activities() {
               <div className="act-card__cat">{category}</div>
               <div className="act-card__name">{name}</div>
               <div className="act-card__price">{price}</div>
+              <a href="#contact" className="act-card__book-btn" onClick={onBook}>Book Now</a>
             </div>
           ))}
         </div>

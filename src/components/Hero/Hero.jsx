@@ -5,7 +5,7 @@ const IMG_LEFT   = "https://d1kxjw4xo8k4dx.cloudfront.net/uploads/images/Paint-B
 const IMG_CENTER = "https://d1kxjw4xo8k4dx.cloudfront.net/uploads/images/1778349918384-1g6pya6k-_J0A1568__1_.JPG";
 const IMG_RIGHT  = "https://d1kxjw4xo8k4dx.cloudfront.net/uploads/images/1778349290607-kdmkxauv-2J0A0599.JPG";
 
-export default function Hero() {
+export default function Hero({ onBook }) {
   return (
     <section className="hero">
       {/* Background decoration */}
@@ -45,7 +45,7 @@ export default function Hero() {
 
         {/* CTA buttons */}
         <div className="hero__ctas">
-          <a href="#contact" className="hero__btn-primary">Book your day →</a>
+          <a href="#contact" className="hero__btn-primary" onClick={onBook}>Book your day →</a>
           <a href="#activities" className="hero__btn-secondary">View activities</a>
         </div>
       </div>

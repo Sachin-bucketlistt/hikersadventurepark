@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Navbar.css';
 
-export default function Navbar() {
+export default function Navbar({ onBook }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -30,7 +30,7 @@ export default function Navbar() {
         {/* CTA buttons */}
         <div className="navbar__cta">
           {/* <a href="#" className="navbar__signin">Sign in</a> */}
-          <a href="#contact" className="navbar__book">Book Now</a>
+          <a href="#contact" className="navbar__book" onClick={onBook}>Book Now</a>
         </div>
 
         {/* Hamburger (mobile) */}
@@ -50,7 +50,7 @@ export default function Navbar() {
           <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
           <a href="#why" onClick={() => setMenuOpen(false)}>Why Us</a>
           <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
-          <a href="#contact" className="navbar__book mobile" onClick={() => setMenuOpen(false)}>Book Now</a>
+          <a href="#contact" className="navbar__book mobile" onClick={(e) => { setMenuOpen(false); onBook(e); }}>Book Now</a>
         </div>
       )}
     </header>
