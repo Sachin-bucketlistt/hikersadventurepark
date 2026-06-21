@@ -26,7 +26,7 @@ export default function Activities({ onBook }) {
         </div>
 
         {/* Category filters */}
-        <div className="activities__filters" role="group" aria-label="Filter activities">
+        {/* <div className="activities__filters" role="group" aria-label="Filter activities">
           {CATEGORIES.map(cat => (
             <button
               key={cat}
@@ -36,7 +36,7 @@ export default function Activities({ onBook }) {
               {cat}
             </button>
           ))}
-        </div>
+        </div> */}
 
         {/* Cards grid */}
         <div className="activities__grid">
