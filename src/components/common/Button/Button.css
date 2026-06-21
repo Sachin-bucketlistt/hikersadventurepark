@@ -1,0 +1,56 @@
+/* =====================================================
+   COMMON BUTTON — primary & secondary variants
+   ===================================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 26px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    border-radius: var(--card-radius, 4px);
+    cursor: pointer;
+    transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease, color 160ms ease;
+    white-space: nowrap;
+}
+
+/* ── PRIMARY — solid brand fill ── */
+.btn--primary {
+    background-color: var(--brand-orange);
+    color: var(--clr-white);
+    box-shadow: 0 4px 18px var(--brand-orange-glow);
+}
+
+.btn--primary:hover {
+    background-color: var(--brand-orange-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px var(--brand-orange-glow);
+}
+
+.btn--primary:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* ── SECONDARY — ghost outline ── */
+.btn--secondary {
+    background-color: transparent;
+    color: var(--clr-dark);
+    border: 1.5px solid rgba(26, 26, 26, 0.45);
+}
+
+.btn--secondary:hover {
+    border-color: var(--clr-dark);
+    background-color: rgba(26, 26, 26, 0.05);
+    transform: translateY(-2px);
+}
+
+.btn--secondary:active {
+    transform: translateY(0);
+}
+

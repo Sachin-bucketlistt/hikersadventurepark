@@ -1,0 +1,143 @@
+#HeroHomeGridContainer {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ── Faint background image ── */
+.BackgroundFadeImageContainer {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.BackgroundFadeImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ── 3 × 5 Grid ── */
+.GridRowsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.GridRowsContainer .gridContainers {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.GridRowsContainer .gridContainers>div {
+    flex: 1 1 0;
+    aspect-ratio: 1 / 1;
+    border: 1px solid rgba(73, 73, 73, 0.04);
+    overflow: hidden;
+    position: relative;
+    background-color: #f5f5f50a;
+}
+
+/* ── Cinematic color grade on images ── */
+.GridRowsContainer .gridContainers>div.hasImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    /* Natural subtle film grade */
+    filter: contrast(1.05) saturate(0.92) brightness(0.97);
+}
+
+/* Natural lens vignette — barely-there corner shadow only */
+.GridRowsContainer .gridContainers>div.hasImage::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        ellipse 70% 70% at 50% 50%,
+        transparent           0%,
+        transparent          50%,
+        rgba(0, 0, 0, 0.08)  72%,
+        rgba(0, 0, 0, 0.28) 100%
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ── Content Overlay ── */
+.HeroContentOverlay {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+
+.HeroContent {
+    padding: 3rem 3.5rem;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    position: relative;
+    pointer-events: all;
+
+    /* Frosted-glass fade — no visible shape, pure smooth white mist */
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    /* Mask: fully opaque in the middle, fades to transparent on all four edges */
+    -webkit-mask-image:
+        radial-gradient(
+            ellipse 80% 80% at 50% 50%,
+            black 30%,
+            transparent 100%
+        );
+    mask-image:
+        radial-gradient(
+            ellipse 80% 80% at 50% 50%,
+            black 30%,
+            transparent 100%
+        );
+}
+
+/* Eyebrow label */
+.HeroEyebrow {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #FB8925;
+    margin: 0;
+}
+
+/* Main heading */
+.HeroHeading {
+    color: #111111;
+    margin: 0;
+
+}
+
+.HeroBrandWord {
+    color: #FB8925;
+}
+
+/* Button group */
+.HeroBtnGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 0.5rem;
+    justify-content: center;
+}
