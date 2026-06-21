@@ -68,7 +68,7 @@ export default function WhyUs() {
   return (
     <section id="why" className="why">
       <div className="why__top">
-        <span className="why__eyebrow">Why Ridgeline</span>
+        <span className="why__eyebrow">Why Hikers Adventure Park</span>
         <h2 className="why__heading">Built for people who don't do boring.</h2>
       </div>
 

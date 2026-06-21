@@ -16,12 +16,7 @@ export default function Navbar() {
       <nav className="navbar__inner container">
         {/* Logo */}
         <a href="#" className="navbar__logo">
-          <span className="navbar__logo-icon">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none">
-              <path d="M3 20 L10 7 L14 14 L17 9 L21 20 Z" fill="#fff" />
-            </svg>
-          </span>
-          <span className="navbar__logo-text">RIDGELINE</span>
+          <img src="/Hapadventurepark-logo.png" alt="Hikers Adventure Park Logo" className="navbar__logo-img" />
         </a>
 
         {/* Desktop links */}

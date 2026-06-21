@@ -20,7 +20,7 @@ export default function About() {
         </div>
         <div className="about__body">
           <p>
-            Ridgeline sits in the hills with everything an outdoor day needs under one
+            Hikers Adventure Park sits in the hills with everything an outdoor day needs under one
             ticket. From first-time climbers to weekend racers, our courses are safe,
             social and genuinely exciting.
           </p>

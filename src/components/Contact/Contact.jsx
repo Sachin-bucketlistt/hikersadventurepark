@@ -52,12 +52,7 @@ export default function Contact() {
         {/* Footer bar */}
         <footer className="contact__footer">
           <a href="#" className="contact__footer-logo">
-            <span className="contact__footer-logo-icon">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
-                <path d="M3 20 L10 7 L14 14 L17 9 L21 20 Z" fill="#fff" />
-              </svg>
-            </span>
-            <span className="contact__footer-logo-text">RIDGELINE</span>
+            <img src="/Hapadventurepark-logo.png" alt="Hikers Adventure Park Logo" className="contact__footer-logo-img" />
           </a>
 
           <nav className="contact__footer-links" aria-label="Footer navigation">
@@ -70,7 +65,7 @@ export default function Contact() {
           </nav>
 
           <span className="contact__footer-copy">
-            © {new Date().getFullYear()} Ridgeline. All rights reserved.
+            © {new Date().getFullYear()} Hikers Adventure Park. All rights reserved.
           </span>
         </footer>
       </div>

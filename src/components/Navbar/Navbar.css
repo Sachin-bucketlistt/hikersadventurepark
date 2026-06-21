@@ -22,22 +22,11 @@
 .navbar__logo {
   display: flex;
   align-items: center;
-  gap: 9px;
+  text-decoration: none;
 }
-.navbar__logo-icon {
-  display: inline-flex;
-  width: 28px;
-  height: 28px;
-  align-items: center;
-  justify-content: center;
-  background: #BFC943;
-  border-radius: 7px;
-}
-.navbar__logo-text {
-  font-weight: 900;
-  font-size: 17px;
-  letter-spacing: -0.02em;
-  color: #141210;
+.navbar__logo-img {
+  height: 38px;
+  display: block;
 }
 .navbar__links {
   display: flex;

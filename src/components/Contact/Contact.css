@@ -106,23 +106,10 @@
 .contact__footer-logo {
   display: flex;
   align-items: center;
-  gap: 9px;
 }
-.contact__footer-logo-icon {
-  display: inline-flex;
-  width: 26px;
-  height: 26px;
-  align-items: center;
-  justify-content: center;
-  background: #BFC943;
-  border-radius: 7px;
-  flex-shrink: 0;
-}
-.contact__footer-logo-text {
-  font-weight: 900;
-  font-size: 15px;
-  letter-spacing: -0.02em;
-  color: #fff;
+.contact__footer-logo-img {
+  height: 32px;
+  display: block;
 }
 .contact__footer-links {
   display: flex;
