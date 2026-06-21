@@ -1,0 +1,8 @@
+/* App.css — global page background and scroll */
+html { scroll-behavior: smooth; }
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+  background: #FBFAF8;
+}

@@ -1,44 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tirra:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* =====================================================
-   DESIGN TOKENS
-   ===================================================== */
-:root {
-  /* Brand colours */
-  --brand-orange:        #FB8925;
-  --brand-orange-hover:  #e07618;
-  --brand-orange-glow:   rgba(251, 137, 37, 0.35);
-
-  /* Neutrals */
-  --clr-black:   #111111;
-  --clr-dark:    #1a1a1a;
-  --clr-mid:     #4b5563;
-  --clr-muted:   #6b7280;
-  --clr-soft:    #a3a3a3;
-  --clr-border:  #e5e7eb;
-  --clr-bg-off:  #f9fafb;
-  --clr-white:   #ffffff;
-
-  /* Spacing scale */
-  --space-xs:  8px;
-  --space-sm:  16px;
-  --space-md:  24px;
-  --space-lg:  40px;
-  --space-xl:  60px;
-  --space-2xl: 80px;
-
-  /* Section vertical padding */
-  --section-py: 72px;
-  /* Section horizontal padding */
-  --section-px: 60px;
-
-  /* Max content width */
-  --max-width: 1200px;
-
-  /* Card radius — 0 for square design */
-  --card-radius: 0px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap');
 
 /* =====================================================
    RESET & BASE
@@ -49,107 +9,46 @@
   padding: 0;
 }
 
+html, body { margin: 0; padding: 0; }
+
 body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--clr-dark);
-  background: var(--clr-white);
+  font-family: 'Archivo', system-ui, sans-serif;
+  color: #141210;
+  background: #FBFAF8;
   -webkit-font-smoothing: antialiased;
 }
 
+::selection { background: #BFC943; color: #fff; }
+
+a { color: inherit; text-decoration: none; }
+
 /* =====================================================
-   TYPOGRAPHY SCALE
+   DESIGN TOKENS
    ===================================================== */
-h1, h2 {
-  font-family: "Tirra", cursive;
-  color: var(--clr-black);
-}
-
-h3, h4, h5, h6, p, span, a, button {
-  font-family: 'Roboto', sans-serif;
-}
-
-p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.65;
-  color: var(--clr-muted);
-}
-
-/* ── Dual-tone section heading (h2) ── */
-.SectionHeading {
-  font-size: clamp(1.75rem, 3.5vw, 2.6rem);
-  font-weight: 700;
-  line-height: 1.1;
-  font-family: "Tirra", cursive;
-  color: var(--clr-black);
-  margin-bottom: var(--space-sm);
-}
-
-.SectionHeading .accent {
-  color: var(--brand-orange);
-}
-
-/* ── Hero / page-level heading (h1) ── */
-.MainHeading {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-  font-weight: 700;
-  line-height: 1;
-  font-family: "Tirra", cursive;
-  color: var(--clr-black);
-}
-
-/* ── Eyebrow label ── */
-.Eyebrow {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--brand-orange);
-}
-
-/* ── Subtext beneath a heading ── */
-.Subtext {
-  font-size: 0.95rem;
-  color: var(--clr-muted);
-  line-height: 1.65;
-  max-width: 580px;
+:root {
+  --brand:            #BFC943;
+  --brand-glow:       rgba(191,201,67,0.15);
+  --bg:               #FBFAF8;
+  --bg-dark:          #141210;
+  --bg-card-dark:     #1C1A17;
+  --border-light:     #ECE7DF;
+  --border-dark:      #2C2924;
+  --text-primary:     #141210;
+  --text-muted:       #5C564E;
+  --text-faint:       #7A7268;
+  --text-dark-muted:  #A9A299;
+  --max-w:            1320px;
 }
 
 /* =====================================================
    LAYOUT UTILITIES
    ===================================================== */
-.text-center { text-align: center; }
-
-/* Standard section wrapper */
-.section-wrap {
-  padding: var(--section-py) var(--section-px);
-}
-
-/* Centered content column */
 .container {
-  max-width: var(--max-width);
+  max-width: var(--max-w);
   margin: 0 auto;
+  padding: 0 36px;
 }
 
-/* =====================================================
-   SECTION DIVIDERS
-   ===================================================== */
-/* Use a thin top-border on sections to visually separate them */
-.section-divider {
-  border: none;
-  border-top: 1px solid var(--clr-border);
-  margin: 0;
-}
-
-/* =====================================================
-   RESPONSIVE ADJUSTMENTS
-   ===================================================== */
 @media (max-width: 768px) {
-  :root {
-    --section-py: 52px;
-    --section-px: 24px;
-  }
-  .SectionHeading {
-    font-size: clamp(1.5rem, 5vw, 2rem);
-  }
+  .container { padding: 0 20px; }
 }
