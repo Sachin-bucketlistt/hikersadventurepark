@@ -101,15 +101,39 @@
   border: 1px solid #E8E5DF;
   border-radius: 14px;
   padding: 20px;
-  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  transition: border-color 0.35s, transform 0.35s, box-shadow 0.35s;
   cursor: default;
   display: flex;
   flex-direction: column;
 }
 .act-card:hover {
   border-color: #F88F21;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(20,18,16,0.04);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(20,18,16,0.18);
+}
+
+/* Bottom gradient shadow overlay — visible on hover */
+.act-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  background: linear-gradient(
+    to top,
+    rgba(20,18,16,0.88) 0%,
+    rgba(20,18,16,0.45) 45%,
+    transparent 100%
+  );
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+  border-radius: 0 0 14px 14px;
+}
+.act-card:hover::after {
+  opacity: 1;
 }
 
 .act-card__bg-fade {
@@ -117,18 +141,19 @@
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.04;
-  filter: grayscale(50%) contrast(100%);
-  transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0.05;
+  filter: grayscale(30%) contrast(105%);
+  transition: opacity 0.35s ease, transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.35s ease;
   pointer-events: none;
   z-index: 0;
 }
 .act-card:hover .act-card__bg-fade {
-  opacity: 0.09;
-  transform: scale(1.08);
+  opacity: 1;
+  filter: grayscale(0%) contrast(100%);
+  transform: scale(1.06);
 }
 
-/* Corner-bracket icon frame */
+/* Corner-bracket icon frame — fades out on hover */
 .act-card__icon-wrap {
   position: relative;
   width: 52px;
@@ -141,6 +166,13 @@
     linear-gradient(45deg, rgba(248,143,33,0.07) 1px, transparent 1px),
     linear-gradient(-45deg, rgba(248,143,33,0.07) 1px, transparent 1px);
   background-size: 12px 12px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+}
+.act-card:hover .act-card__icon-wrap {
+  opacity: 0;
+  transform: scale(0.85);
+  pointer-events: none;
 }
 .act-card__icon-wrap::before,
 .act-card__icon-wrap::after,
@@ -183,35 +215,47 @@
 
 .act-card__cat {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #F88F21;
   margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+.act-card:hover .act-card__cat {
+  color: #F88F21;
 }
 .act-card__name {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   font-size: 16px;
   font-weight: 800;
   letter-spacing: -0.01em;
   margin-bottom: 4px;
   color: #141210;
+  transition: color 0.3s ease;
+}
+.act-card:hover .act-card__name {
+  color: #fff;
 }
 .act-card__price {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   font-size: 13px;
   color: #5C564E;
   font-weight: 600;
   margin-bottom: 16px;
+  transition: color 0.3s ease;
+}
+.act-card:hover .act-card__price {
+  color: rgba(255,255,255,0.75);
 }
 
 .act-card__book-btn {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin-top: auto;
   display: inline-flex;
   align-items: center;
@@ -228,6 +272,11 @@
   text-decoration: none;
   transition: background 0.2s, border-color 0.2s, color 0.2s;
   text-align: center;
+}
+.act-card:hover .act-card__book-btn {
+  color: #141210;
+  border-color: #F88F21;
+  background: #F88F21;
 }
 
 .act-card__book-btn:hover {
