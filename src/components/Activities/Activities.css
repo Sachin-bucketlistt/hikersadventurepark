@@ -1,6 +1,6 @@
 .activities {
-  background: #141210;
-  color: #fff;
+  background: #FFFFFF;
+  color: #141210;
   padding: 64px 0;
   position: relative;
   overflow: hidden;
@@ -11,8 +11,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(45deg, rgba(255,255,255,0.025) 1px, transparent 1px),
-    linear-gradient(-45deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    linear-gradient(45deg, rgba(20,18,16,0.015) 1px, transparent 1px),
+    linear-gradient(-45deg, rgba(20,18,16,0.015) 1px, transparent 1px);
   background-size: 40px 40px;
   pointer-events: none;
 }
@@ -38,7 +38,7 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #BFC943;
+  color: #F88F21;
 }
 .activities__heading {
   font-size: clamp(26px, 3.2vw, 38px);
@@ -46,11 +46,11 @@
   font-weight: 800;
   letter-spacing: -0.03em;
   margin: 12px 0 0;
-  color: #fff;
+  color: #141210;
 }
 .activities__sub {
   font-size: 15px;
-  color: #A9A299;
+  color: #5C564E;
   max-width: 340px;
   margin: 0;
   line-height: 1.55;
@@ -70,20 +70,20 @@
   text-transform: uppercase;
   padding: 5px 13px;
   border-radius: 100px;
-  border: 1px solid #2C2924;
-  color: #A9A299;
+  border: 1px solid #E4E0D9;
+  color: #5C564E;
   background: transparent;
   cursor: pointer;
   transition: border-color 0.18s, color 0.18s, background 0.18s;
   font-family: inherit;
 }
 .activities__filter:hover {
-  border-color: #BFC943;
-  color: #fff;
+  border-color: #F88F21;
+  color: #141210;
 }
 .activities__filter--active {
-  background: #BFC943;
-  border-color: #BFC943;
+  background: #F88F21;
+  border-color: #F88F21;
   color: #141210;
 }
 
@@ -97,18 +97,19 @@
 .act-card {
   position: relative;
   overflow: hidden;
-  background: #1C1A17;
-  border: 1px solid #2C2924;
+  background: #FAF9F6;
+  border: 1px solid #E8E5DF;
   border-radius: 14px;
   padding: 20px;
-  transition: border-color 0.2s, transform 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
   cursor: default;
   display: flex;
   flex-direction: column;
 }
 .act-card:hover {
-  border-color: #BFC943;
+  border-color: #F88F21;
   transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(20,18,16,0.04);
 }
 
 .act-card__bg-fade {
@@ -116,14 +117,14 @@
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.08;
-  filter: grayscale(40%) contrast(110%);
+  opacity: 0.04;
+  filter: grayscale(50%) contrast(100%);
   transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   pointer-events: none;
   z-index: 0;
 }
 .act-card:hover .act-card__bg-fade {
-  opacity: 0.15;
+  opacity: 0.09;
   transform: scale(1.08);
 }
 
@@ -137,8 +138,8 @@
   justify-content: center;
   margin-bottom: 14px;
   background-image:
-    linear-gradient(45deg, rgba(191,201,67,0.07) 1px, transparent 1px),
-    linear-gradient(-45deg, rgba(191,201,67,0.07) 1px, transparent 1px);
+    linear-gradient(45deg, rgba(248,143,33,0.07) 1px, transparent 1px),
+    linear-gradient(-45deg, rgba(248,143,33,0.07) 1px, transparent 1px);
   background-size: 12px 12px;
 }
 .act-card__icon-wrap::before,
@@ -153,23 +154,23 @@
 }
 .act-card__icon-wrap::before {
   top: 0; left: 0;
-  border-top: 1.5px solid #BFC943;
-  border-left: 1.5px solid #BFC943;
+  border-top: 1.5px solid #F88F21;
+  border-left: 1.5px solid #F88F21;
 }
 .act-card__icon-wrap::after {
   top: 0; right: 0;
-  border-top: 1.5px solid #BFC943;
-  border-right: 1.5px solid #BFC943;
+  border-top: 1.5px solid #F88F21;
+  border-right: 1.5px solid #F88F21;
 }
 .act-card__corner-bl {
   bottom: 0; left: 0;
-  border-bottom: 1.5px solid #BFC943;
-  border-left: 1.5px solid #BFC943;
+  border-bottom: 1.5px solid #F88F21;
+  border-left: 1.5px solid #F88F21;
 }
 .act-card__corner-br {
   bottom: 0; right: 0;
-  border-bottom: 1.5px solid #BFC943;
-  border-right: 1.5px solid #BFC943;
+  border-bottom: 1.5px solid #F88F21;
+  border-right: 1.5px solid #F88F21;
 }
 
 .act-card__img {
@@ -187,7 +188,7 @@
   font-weight: 700;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #BFC943;
+  color: #F88F21;
   margin-bottom: 6px;
 }
 .act-card__name {
@@ -197,13 +198,13 @@
   font-weight: 800;
   letter-spacing: -0.01em;
   margin-bottom: 4px;
-  color: #fff;
+  color: #141210;
 }
 .act-card__price {
   position: relative;
   z-index: 1;
   font-size: 13px;
-  color: #7A7268;
+  color: #5C564E;
   font-weight: 600;
   margin-bottom: 16px;
 }
@@ -220,9 +221,9 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #BFC943;
-  border: 1px solid rgba(191, 201, 67, 0.25);
-  background: rgba(191, 201, 67, 0.03);
+  color: #141210;
+  border: 1px solid #141210;
+  background: transparent;
   border-radius: 100px;
   text-decoration: none;
   transition: background 0.2s, border-color 0.2s, color 0.2s;
@@ -230,8 +231,8 @@
 }
 
 .act-card__book-btn:hover {
-  background: #BFC943;
-  border-color: #BFC943;
+  background: #F88F21;
+  border-color: #F88F21;
   color: #141210;
 }
 

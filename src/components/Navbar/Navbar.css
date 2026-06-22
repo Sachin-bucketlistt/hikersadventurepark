@@ -39,7 +39,7 @@
 .navbar__links a {
   transition: color 0.18s;
 }
-.navbar__links a:hover { color: #BFC943; }
+.navbar__links a:hover { color: #F88F21; }
 
 .navbar__cta {
   display: flex;
@@ -52,7 +52,7 @@
   color: #141210;
   transition: color 0.18s;
 }
-.navbar__signin:hover { color: #BFC943; }
+.navbar__signin:hover { color: #F88F21; }
 
 .navbar__book {
   font-size: 14px;
@@ -63,7 +63,7 @@
   border-radius: 100px;
   transition: background 0.2s;
 }
-.navbar__book:hover { background: #BFC943; color: #141210; }
+.navbar__book:hover { background: #F88F21; color: #141210; }
 
 /* Hamburger */
 .navbar__hamburger {
@@ -109,7 +109,7 @@
   transition: color 0.18s;
 }
 .navbar__mobile-menu a:last-child { border-bottom: none; }
-.navbar__mobile-menu a:hover { color: #BFC943; }
+.navbar__mobile-menu a:hover { color: #F88F21; }
 .navbar__book.mobile {
   margin-top: 8px;
   display: inline-block;

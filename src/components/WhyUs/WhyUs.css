@@ -13,7 +13,7 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #BFC943;
+  color: #F88F21;
 }
 .why__heading {
   font-size: clamp(26px, 3.2vw, 38px);
@@ -47,7 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(191,201,67,0.1);
+  background: rgba(248,143,33,0.1);
   border-radius: 10px;
   margin-bottom: 18px;
 }

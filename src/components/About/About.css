@@ -18,7 +18,7 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #BFC943;
+  color: #F88F21;
 }
 
 .about__heading {
@@ -63,7 +63,7 @@
   line-height: 1;
   color: #141210;
 }
-.about__stat-num .accent { color: #BFC943; }
+.about__stat-num .accent { color: #F88F21; }
 
 .about__stat-label {
   font-size: 14px;

@@ -14,7 +14,7 @@
   width: 600px;
   height: 300px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(191,201,67,0.18), transparent 68%);
+  background: radial-gradient(circle, rgba(248,143,33,0.18), transparent 68%);
   pointer-events: none;
 }
 
@@ -39,7 +39,7 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #BFC943;
+  color: #F88F21;
   margin-bottom: 16px;
 }
 .contact__heading {
@@ -77,7 +77,7 @@
   transition: border-color 0.2s;
 }
 .contact__input::placeholder { color: #5C564E; }
-.contact__input:focus { border-color: #BFC943; }
+.contact__input:focus { border-color: #F88F21; }
 
 .contact__btn {
   font-size: 14px;
@@ -86,7 +86,7 @@
   padding: 12px 24px;
   border-radius: 100px;
   border: none;
-  background: #BFC943;
+  background: #F88F21;
   color: #141210;
   cursor: pointer;
   transition: opacity 0.2s;
@@ -108,7 +108,7 @@
   align-items: center;
 }
 .contact__footer-logo-img {
-  height: 32px;
+  height: 50px;
   display: block;
 }
 .contact__footer-links {

@@ -27,7 +27,7 @@
   width: 440px;
   height: 440px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(191,201,67,0.13), transparent 68%);
+  background: radial-gradient(circle, rgba(248,143,33,0.13), transparent 68%);
   pointer-events: none;
 }
 
@@ -59,7 +59,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #2BA84A;
+  background: #F88F21;
   flex-shrink: 0;
 }
 
@@ -73,7 +73,7 @@
   text-wrap: balance;
   color: #141210;
 }
-.hero__heading .accent { color: #BFC943; }
+.hero__heading .accent { color: #F88F21; }
 
 /* Activity badge strip */
 .hero__badge {
@@ -81,7 +81,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 0;
-  background: #BFC943;
+  background: #F88F21;
   color: #141210;
   font-weight: 700;
   font-size: 15px;
@@ -117,7 +117,7 @@
   font-size: 15px;
   font-weight: 700;
   color: #141210;
-  background: #BFC943;
+  background: #F88F21;
   padding: 12px 26px;
   border-radius: 100px;
   transition: opacity 0.2s;

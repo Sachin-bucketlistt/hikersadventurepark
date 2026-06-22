@@ -2,7 +2,7 @@ import './About.css';
 
 const STATS = [
   { num: '40',    suffix: '',  label: 'Acres of terrain' },
-  { num: '20',    suffix: '+', label: 'Activities on site' },
+  { num: '45',    suffix: '+', label: 'Activities on site' },
   { num: '250k',  suffix: '+', label: 'Adventurers a year' },
   { num: '15',    suffix: '',  label: 'Years running' },
 ];
@@ -20,13 +20,15 @@ export default function About() {
         </div>
         <div className="about__body">
           <p>
-            Hikers Adventure Park sits in the hills with everything an outdoor day needs under one
-            ticket. From first-time climbers to weekend racers, our courses are safe,
-            social and genuinely exciting.
+            Nestled in the beautiful Shivalik Mountain Ranges of Shivpuri, near Rishikesh, Uttarakhand, 
+            Hikers Adventure Park is the ultimate destination for thrill-seekers and nature lovers alike. 
+            With over 45 high-adrenaline activities, we welcome visitors from all corners of the globe 
+            to challenge their limits, conquer their fears, and experience absolute excitement.
           </p>
           <p>
-            Every activity is run by certified guides with gear, safety briefings and
-            a junior track so the youngest adventurers get their own thrills too.
+            Your safety is our top priority. Every activity is fully supervised by our highly trained 
+            professionals using top-tier safety gear. Surrounded by the peaceful tranquility and gushing 
+            sounds of nature, this is the perfect getaway to create incredible, once-in-a-lifetime memories.
           </p>
         </div>
       </div>
